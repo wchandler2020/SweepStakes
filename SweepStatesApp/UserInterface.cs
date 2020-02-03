@@ -6,19 +6,37 @@ using System.Threading.Tasks;
 
 namespace SweepStatesApp
 {
-    class UserInterface
+   static class UserInterface
     {
-        public void Greeting()
+        public static void Greeting()
         {
-            
-
             Console.WriteLine("Hello, Welcome to PCH, where you Could Win a Life-Changing cash and prizes!");
+            
+        }
+
+        public static string SetUserFirstName()
+        {
             Console.WriteLine("What is your first name?");
-            string useFIrstName = Console.ReadLine();
-            Console.WriteLine("What is your first name?");
-            string userLastName = Console.ReadLine();
-            Console.WriteLine($"Helo {useFIrstName} {userLastName} please enter an email address?");
-            string userEmail = Console.ReadLine();
+            return Console.ReadLine();
+        }
+
+        public static string SetUserLastName()
+        {
+            Console.WriteLine("What is your last name?");
+            return Console.ReadLine();
+        }
+
+        public static string SetUserEmail()
+        {
+            Console.WriteLine("Please provide an email address.");
+            return Console.ReadLine();
+        }
+
+        public static void SetUserRegisterNum()
+        {
+            Random random = new Random();
+            int userRegistrationNumber = random.Next(999999);
+            Console.WriteLine($"Congratulations, your registered number is: {userRegistrationNumber}");
         }
     }
 }
