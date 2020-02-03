@@ -8,10 +8,10 @@ namespace SweepStatesApp
 {
    static class UserInterface
     {
+        public static int registrationNumber;
         public static void Greeting()
         {
-            Console.WriteLine("Hello, Welcome to PCH, where you Could Win a Life-Changing cash and prizes!");
-            
+            Console.WriteLine("Hello, Welcome to PCH, where you Could Win a Life-Changing cash and prizes!");  
         }
 
         public static string SetUserFirstName()
@@ -32,11 +32,21 @@ namespace SweepStatesApp
             return Console.ReadLine();
         }
 
-        public static void SetUserRegisterNum()
+        public static int SetUserRegisterNum()
         {
-            Random random = new Random();
-            int userRegistrationNumber = random.Next(999999);
-            Console.WriteLine($"Congratulations, your registered number is: {userRegistrationNumber}");
+            registrationNumber += 1;
+            Console.WriteLine($"Your registered number is: {registrationNumber}");
+            Console.ReadLine();
+            return registrationNumber;
+        }
+
+        public static void SetContestant()
+        {
+            Greeting();
+            SetUserFirstName();
+            SetUserLastName();
+            SetUserEmail();
+            SetUserRegisterNum();
         }
     }
 }

@@ -10,6 +10,9 @@ namespace SweepStatesApp
     {
         static void Main(string[] args)
         {
+            MarketingFirm marketingFirm = new MarketingFirm();
+            marketingFirm.MarketingManager();
+            marketingFirm.CreateSweepstake();
         }
     }
 }

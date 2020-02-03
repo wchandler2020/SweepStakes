@@ -8,5 +8,16 @@ namespace SweepStatesApp
 {
     class MarketingFirm
     {
+        public ISweepStakesManager _manager;
+
+        public void MarketingManager()
+        {
+            UserInterface.SetContestant();
+        }
+        public void CreateSweepstake()
+        {
+            Console.WriteLine("Test");
+            Console.ReadLine();
+        }
     }
 }
