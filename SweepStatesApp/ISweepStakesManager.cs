@@ -9,7 +9,6 @@ namespace SweepStatesApp
    
         interface ISweepStakesManager
         {
-
         void InsertSweepstakes(SweepStakes sweepStakes);
             SweepStakes GetSweepstakes();
         }

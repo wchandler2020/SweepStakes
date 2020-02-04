@@ -9,11 +9,12 @@ namespace SweepStatesApp
     class SweepStakes
     {
         public string sweepStakesName;
+        public int sweepContestantAmount;
         public int winningNum;
-        public Dictionary<int, Contestant > SweepStakeName;
+        public Dictionary<int, Contestant> SweepStakeName;
 
 
-        
+
         public void CreateContestant(Contestant contestant)
         {
             contestant.firstName = UserInterface.SetUserFirstName();
@@ -27,7 +28,7 @@ namespace SweepStatesApp
             Contestant defaultContestant = null;
             Random randnumber = new Random();
             winningNum = randnumber.Next(); //????
-            
+
             foreach (KeyValuePair<int, Contestant> contestant in SweepStakeName)//????
             {
                 if (contestant.Key == winningNum)
@@ -39,11 +40,11 @@ namespace SweepStatesApp
         }
 
         public void GetContestantData(Contestant contestant)
-        {
-            Console.WriteLine($"Contestant's first name: {contestant.firstName} {contestant.lastName}" );
-            Console.WriteLine($"Contestant's email address: {contestant.email}");
-            Console.WriteLine($"Contestant registration number#: {contestant.registrationNumber}");
-        }
+            {
+                Console.WriteLine($"Contestant's first name: {contestant.firstName} {contestant.lastName}" );
+                Console.WriteLine($"Contestant's email address: {contestant.email}");
+                Console.WriteLine($"Contestant registration number#: {contestant.registrationNumber}");
+            }
 
-    }
+        }
 }

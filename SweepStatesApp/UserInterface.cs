@@ -40,7 +40,7 @@ namespace SweepStatesApp
             return registrationNumber;
         }
 
-        public static void SetContestant()
+        public static void RegisterContestant()
         {
             Greeting();
             SetUserFirstName();

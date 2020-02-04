@@ -12,7 +12,7 @@ namespace SweepStatesApp
         {
             MarketingFirm marketingFirm = new MarketingFirm();
             marketingFirm.MarketingManager();
-            marketingFirm.CreateSweepstake();
+            //marketingFirm.CreateSweepstake();
         }
     }
 }

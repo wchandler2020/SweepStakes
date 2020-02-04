@@ -12,12 +12,17 @@ namespace SweepStatesApp
 
         public void MarketingManager()
         {
-            UserInterface.SetContestant();
+            UserInterface.RegisterContestant();
         }
-        public void CreateSweepstake()
+        public void CreateSweepstake(SweepStakes sweepStakes)
         {
-            Console.WriteLine("Test");
-            Console.ReadLine();
+            for (int i = 0; i < sweepStakes.; i++)
+            {
+                Contestant newContestant = new Contestant();
+                
+
+            }
+            
         }
     }
 }
